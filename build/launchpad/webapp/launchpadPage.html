@@ -24,7 +24,7 @@
       "description": "UI for risks app",
       "applicationType": "URL",
       "navigationMode": "newWindowThenEmbedded",
-      "url": "./risk_management.risks/webapp",
+      "url": "../lcaprisk_management.riskmanagementrisks-0.0.1",
       "additionalInformation": "SAPUI5.Component=riskmanagement.risks"
     }
   }
@@ -43,9 +43,7 @@
         ></script>
         <script>
             sap.ui.getCore().attachInit(function() {
-                sap.ushell.Container.createRenderer("fiori2", true).then(function(oRenderer) {
-                  oRenderer.placeAt('content');
-                });
+                sap.ushell.Container.createRenderer().placeAt('content');
             });
         </script>
     </head>
