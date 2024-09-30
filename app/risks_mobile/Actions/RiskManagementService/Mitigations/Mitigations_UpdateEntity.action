@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Mitigations",
+        "Service": "/risks_mobile/Services/RiskManagementService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "createdAt": "#Control:createdAt/#Value",
+        "createdBy": "#Control:createdBy/#Value",
+        "description": "#Control:description/#Value",
+        "owner": "#Control:owner/#Value",
+        "timeline": "#Control:timeline/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/risks_mobile/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/risks_mobile/Actions/UpdateEntityFailureMessage.action"
+}
